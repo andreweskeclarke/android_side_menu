@@ -2,4 +2,5 @@
 <resources>
     <string name="app_name">android_side_menu</string>
     <string name="attach">Attach</string>
+    <string name="action_bar_example">Example</string>
 </resources>

@@ -1,0 +1,30 @@
+<component name="libraryTable">
+  <library name="SlidingMenu">
+    <CLASSES />
+    <JAVADOC />
+    <SOURCES>
+      <root url="file://$PROJECT_DIR$/../SlidingMenu/example/src/main/java" />
+      <root url="file://$PROJECT_DIR$/../SlidingMenu/example/libs/JakeWharton-ActionBarSherlock-071a61c/actionbarsherlock/src" />
+      <root url="file://$PROJECT_DIR$/../SlidingMenu/example/libs/JakeWharton-ActionBarSherlock-071a61c/actionbarsherlock/test" />
+      <root url="file://$PROJECT_DIR$/../SlidingMenu/example/libs/JakeWharton-ActionBarSherlock-071a61c/actionbarsherlock-fest/src/main/java" />
+      <root url="file://$PROJECT_DIR$/../SlidingMenu/example/libs/JakeWharton-ActionBarSherlock-071a61c/actionbarsherlock-samples/demos/src" />
+      <root url="file://$PROJECT_DIR$/../SlidingMenu/example/libs/JakeWharton-ActionBarSherlock-071a61c/actionbarsherlock-samples/styled/src" />
+      <root url="file://$PROJECT_DIR$/../SlidingMenu/example/libs/JakeWharton-ActionBarSherlock-071a61c/actionbarsherlock-samples/fragments/src" />
+      <root url="file://$PROJECT_DIR$/../SlidingMenu/example/libs/JakeWharton-ActionBarSherlock-071a61c/actionbarsherlock-samples/roboguice/src" />
+      <root url="file://$PROJECT_DIR$/../SlidingMenu/example/libs/JakeWharton-ActionBarSherlock-071a61c/actionbarsherlock-samples/known-bugs/src" />
+      <root url="file://$PROJECT_DIR$/../SlidingMenu/library/gen" />
+      <root url="file://$PROJECT_DIR$/../SlidingMenu/library/src" />
+      <root url="file://$PROJECT_DIR$/../SlidingMenu/library/JakeWharton-ActionBarSherlock-071a61c/actionbarsherlock/src" />
+      <root url="file://$PROJECT_DIR$/../SlidingMenu/library/JakeWharton-ActionBarSherlock-071a61c/actionbarsherlock/test" />
+      <root url="file://$PROJECT_DIR$/../SlidingMenu/library/JakeWharton-ActionBarSherlock-071a61c/actionbarsherlock-fest/src/main/java" />
+      <root url="file://$PROJECT_DIR$/../SlidingMenu/library/JakeWharton-ActionBarSherlock-071a61c/actionbarsherlock-samples/demos/src" />
+      <root url="file://$PROJECT_DIR$/../SlidingMenu/library/JakeWharton-ActionBarSherlock-071a61c/actionbarsherlock-samples/styled/src" />
+      <root url="file://$PROJECT_DIR$/../SlidingMenu/library/JakeWharton-ActionBarSherlock-071a61c/actionbarsherlock-samples/fragments/src" />
+      <root url="file://$PROJECT_DIR$/../SlidingMenu/library/JakeWharton-ActionBarSherlock-071a61c/actionbarsherlock-samples/roboguice/src" />
+      <root url="file://$PROJECT_DIR$/../SlidingMenu/library/JakeWharton-ActionBarSherlock-071a61c/actionbarsherlock-samples/known-bugs/src" />
+      <root url="file://$PROJECT_DIR$/../SlidingMenu/library-maps-support/src" />
+      <root url="file://$PROJECT_DIR$/../SlidingMenu" />
+    </SOURCES>
+    <jarDirectory url="file://$PROJECT_DIR$/../SlidingMenu" recursive="false" type="SOURCES" />
+  </library>
+</component>

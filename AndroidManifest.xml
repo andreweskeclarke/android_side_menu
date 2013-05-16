@@ -14,5 +14,7 @@
             </intent-filter>
         </activity>
         <activity android:name="TextActivity"/>
+        <activity android:name="NavigationDrawerActivity"/>
+        <activity android:name="NavigationDrawerTextActivity"/>
     </application>
 </manifest> 

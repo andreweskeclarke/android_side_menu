@@ -7,7 +7,14 @@
     <TextView
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:text="Hello World, MainActivity"
+            android:layout_gravity="center"
+            android:text="This is a common pattern, but against Google's suggestions"
             android:textColor="#000000"/>
+    <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/navigation_drawer_button"
+            android:id="@+id/navigation_drawer_button"
+            android:layout_gravity="center"/>
 </LinearLayout>
 

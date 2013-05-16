@@ -3,4 +3,7 @@
     <string name="app_name">android_side_menu</string>
     <string name="attach">Attach</string>
     <string name="action_bar_example">Example</string>
+    <string name="navigation_drawer_button">See Suggested Navigation Drawer</string>
+    <string name="navigation_drawer_text">This is a navigation drawer example</string>
+    <string name="see_main_activity_button">See Common, Unsuggested Side Menu</string>
 </resources>

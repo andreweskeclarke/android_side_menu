@@ -10,7 +10,7 @@ import android.view.View;
 import android.widget.*;
 import com.jeremyfeinstein.slidingmenu.lib.SlidingMenu;
 
-public class SideMenuActivity extends Activity {
+public class SideMenuActivity extends ActionBarredActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -42,17 +42,9 @@ public class SideMenuActivity extends Activity {
         public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
             String optionName = ((TextView) view).getText().toString();
 
-            Intent intent = new Intent(getApplicationContext(), TextActivity.class);
+            Intent intent = new Intent(getApplicationContext(), MainActivity.class);
             intent.putExtra("optionName", optionName);
             startActivity(intent);
         }
     };
-
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        MenuInflater inflater = getMenuInflater();
-        inflater.inflate(R.menu.action_bar_settings, menu);
-        inflater.inflate(R.menu.action_bar_example, menu);
-        return true;
-    }
 }

@@ -1,21 +1,25 @@
 package com.aeclarke.androidsidemenu;
 
 
-import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.AdapterView;
-import android.widget.ArrayAdapter;
-import android.widget.ListView;
-import android.widget.TextView;
+import android.widget.*;
 
-public class NavigationDrawerActivity extends Activity {
+public class NavigationDrawerExampleActivity extends ActionBarredActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.navigation_drawer);
+
+        TextView contentTextView = (TextView) findViewById(R.id.navigation_drawer_text);
+        String pageContent = getIntent().getStringExtra("optionName");
+        pageContent = (pageContent == null) ? this.getString(R.string.navigation_drawer_text) : pageContent;
+        contentTextView.setText(pageContent);
+
+        Button returnToMainButton = (Button) findViewById(R.id.see_main_activity_button);
+        returnToMainButton.setOnClickListener(mainButtonListener);
         String[] options = {"Option 1", "Option 2"};
         ListView navigationDrawerList = (ListView) findViewById(R.id.left_drawer);
 
@@ -30,8 +34,16 @@ public class NavigationDrawerActivity extends Activity {
         public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
             String optionName = ((TextView) view).getText().toString();
 
-            Intent intent = new Intent(getApplicationContext(), NavigationDrawerTextActivity.class);
+            Intent intent = new Intent(NavigationDrawerExampleActivity.this, NavigationDrawerExampleActivity.class);
             intent.putExtra("optionName", optionName);
+            startActivity(intent);
+        }
+    };
+
+    private View.OnClickListener mainButtonListener = new View.OnClickListener() {
+        @Override
+        public void onClick(View v) {
+            Intent intent = new Intent(NavigationDrawerExampleActivity.this, MainActivity.class);
             startActivity(intent);
         }
     };

@@ -13,8 +13,6 @@
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
-        <activity android:name="TextActivity"/>
-        <activity android:name="NavigationDrawerActivity"/>
-        <activity android:name="NavigationDrawerTextActivity"/>
+        <activity android:name=".NavigationDrawerExampleActivity"/>
     </application>
 </manifest> 

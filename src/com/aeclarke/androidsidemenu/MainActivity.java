@@ -2,12 +2,12 @@ package com.aeclarke.androidsidemenu;
 
 import android.app.ActionBar;
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuInflater;
-import android.widget.ArrayAdapter;
-import android.widget.ListAdapter;
-import android.widget.ListView;
+import android.view.View;
+import android.widget.*;
 import com.jeremyfeinstein.slidingmenu.lib.SlidingMenu;
 
 public class MainActivity extends Activity {
@@ -32,9 +32,20 @@ public class MainActivity extends Activity {
         String[] options = {"Option 1", "Option 2"};
         adapter = new ArrayAdapter<String>(this,android.R.layout.simple_list_item_1, options);
         menuList.setAdapter(adapter);
-        ActionBar actionBar = getActionBar();
-        actionBar.show();
+
+        menuList.setOnItemClickListener(onItemClickListener);
     }
+
+    private AdapterView.OnItemClickListener onItemClickListener = new AdapterView.OnItemClickListener() {
+        @Override
+        public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+            String optionName = ((TextView) view).getText().toString();
+
+            Intent intent = new Intent(getApplicationContext(), TextActivity.class);
+            intent.putExtra("optionName", optionName);
+            startActivity(intent);
+        }
+    };
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
